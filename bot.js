@@ -32,7 +32,7 @@ client.on('message',function(message) {
     });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOTT_TOKEN);
+client.login(process.env.BOT_TOKEN);
 const another = new Discord.Client();
 const owneridd = '279971558804422666';
 const adminprefixx = "$";
