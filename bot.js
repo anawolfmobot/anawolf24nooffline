@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const ownerid = '303311682929688577';
+const ownerid = '279971558804422666';
 const adminprefix = "$";
-const devs = ['303311682929688577'];
+const devs = ['279971558804422666'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -17,7 +17,7 @@ if (message.content.startsWith(adminprefix + 'setG')) {
 client.on('message',function(message) {
         let args = message.content.split(" ").slice(1).join(" ");
        if(message.content.startsWith(adminprefix + "setW")) {
-           if(message.author.id !== '303311682929688577') return;
+           if(message.author.id !== '279971558804422666') return;
            client.user.setActivity(args,{type: 'WATCHING'});
            message.channel.send("**- :white_check_mark: Done!,**");
        } 
@@ -25,7 +25,7 @@ client.on('message',function(message) {
     client.on('message',function(message) {
         let args = message.content.split(" ").slice(1).join(" ");
        if(message.content.startsWith(adminprefix + "setL")) {
-           if(message.author.id !== '303311682929688577') return;
+           if(message.author.id !== '279971558804422666') return;
            client.user.setActivity(args,{type: 'LISTENING'});
            message.channel.send("**- :white_check_mark: Done!,**");
        } 
