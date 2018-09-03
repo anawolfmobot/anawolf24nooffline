@@ -31,6 +31,10 @@ client.on('message',function(message) {
        } 
     });
 
+client.on('ready',async () => {
+  client.channels.find(ch => ch.id === "486127666118918147" && ch.type === 'voice').join();
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
 const another = new Discord.Client();
